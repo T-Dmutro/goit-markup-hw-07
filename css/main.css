@@ -550,6 +550,10 @@ h3 {
   margin-bottom: 32px;
 }
 
+.header--portfolio {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header__nav {
   display: flex;
   align-items: baseline;
