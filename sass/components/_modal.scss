@@ -31,11 +31,8 @@
         border;
     transition-duration: 2000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.modal__button:hover .modal__icon {
-    fill: var(--hover-effect-color);
+    &:hover .modal__icon {
+    fill: var(--hover-effect-color);}
 }
 
 .modal__picture {
@@ -132,14 +129,10 @@
         border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__input:focus {
-    border: 1px solid var(--hover-effect-color);
-}
-
-.modal__input:focus+.modal__svg {
-    fill: var(--hover-effect-color);
+    &:focus {
+    border: 1px solid var(--hover-effect-color);}
+    &:focus+.modal__svg {
+    fill: var(--hover-effect-color);}
 }
 
 .modal__check {
@@ -159,28 +152,23 @@
         border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__check span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--primary-title-color);
-    border-radius: 3px;
-    margin-right: 7px;
-    transition-property: fill,
-        border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        & span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 15px;
+        border: 1px solid var(--primary-title-color);
+        border-radius: 3px;
+        margin-right: 7px;
+        transition-property: fill,
+            border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
 }
 
-.modal__checkbox:checked+.modal__check span {
-    background-color: var(--hover-effect-color);
-    border-color: var(--hover-effect-color);
-}
+
 
 .modal__checkbox {
     position: absolute;
@@ -191,8 +179,10 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+    &:checked+.modal__check span {
+    background-color: var(--hover-effect-color);
+    border-color: var(--hover-effect-color);}
 }
-
 textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -203,11 +193,8 @@ textarea {
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* textarea:hover, */
-textarea:focus {
-    border: 1px solid var(--hover-effect-color);
+&:focus {
+    border: 1px solid var(--hover-effect-color);}
 }
 
 .coment {
@@ -219,17 +206,14 @@ textarea:focus {
 .modal__textarea {
     outline: none;
     width: 100%;
-}
-
-.modal__textarea::placeholder {
+    &::placeholder {
     padding: 12px 16px;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);}
 }
 
 .modal__send {

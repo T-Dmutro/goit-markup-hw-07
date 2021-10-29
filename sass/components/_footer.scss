@@ -1,10 +1,17 @@
 .footer {
+    display: flex;
     background-color: var(--futer-color);
     font-style: normal;
     list-style-type: none;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    & a {
+    display: inline-block;}
+    /* margin-bottom: 20px;*/
+
 }
 .footer__logo {
     display: flex;
@@ -14,19 +21,9 @@
 .footer__adress {
     display: flex;
 }
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
-.footer a {
-    display: inline-block;
-    /* margin-bottom: 20px;*/
 
-}
-.footer {
-    display: flex;
-}
+
 
 .footer__contact {
     display: flex;
@@ -59,9 +56,6 @@
     list-style: none;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 0px;
-
-}
-
-.footer__item:last-child {
-    margin-bottom: 0px;
+    &:last-child {
+    margin-bottom: 0px;}
 }

@@ -12,17 +12,12 @@
         border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.mail__contakt:hover,
-:focus {
-    color: var(--hover-effect-color);
-}
-
-.mail__contakt svg {
+    &:hover,
+    :focus {
+    color: var(--hover-effect-color);}
+    & svg {
     width: 16px;
-    height: 12px;
+    height: 12px;}
 }
 
 .mail__icon {

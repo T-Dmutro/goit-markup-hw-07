@@ -1,9 +1,7 @@
 .description {
     margin-right: 30px;
-}
-
-.description:last-child {
-    margin-right: 0px;
+    &:last-child {
+    margin-right: 0px;}
 }
 
 .description__box {
@@ -15,19 +13,13 @@
     background-size: cover;
     background-color: #F5F4FA;
     margin-bottom: 30px;
-}
-
-.description__box svg {
+    & svg {
     width: 70px;
-    height: 70px;
+    height: 70px;}
 }
 
 .description__icon {
-
-
     fill: #212121;
-
-
 }
 
 .description__title {

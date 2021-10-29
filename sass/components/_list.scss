@@ -10,10 +10,8 @@
     display: inline-block;
     margin-right: 30px;
 
-}
-
-.list__link:last-of-type {
-    margin-right: 0px;
+    &:last-of-type {
+    margin-right: 0px;}
 }
 
 /*comand*/

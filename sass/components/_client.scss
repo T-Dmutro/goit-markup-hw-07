@@ -33,11 +33,8 @@
     border-radius: 4px;
     width: 170px;
     height: 92px;
-
-}
-
-.client__company:last-child {
-    margin-right: 0px;
+    &:last-child {
+    margin-right: 0px;}
 
 }
 
@@ -56,26 +53,20 @@
         border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.client__link:hover,
-.client__link:focus {
+    &:hover,
+    &:focus {
     fill: #2196F3;
     border: 1px solid #2196F3;
     fill: var(--hover-effect-color);
-    cursor: pointer;
+    cursor: pointer;}
 }
 
 .client__icon {
     display: flex;
     background-position: 50% 50%;
-
-}
-
-.client__icon:hover,
-.client__icon:focus {
-    fill: #2196F3;
+    &:hover,
+    &:focus {
+    fill: #2196F3;}
 }
 
 .client__picture {

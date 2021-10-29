@@ -20,7 +20,15 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+.cards__foto:hover .cards__text {
+    transform: translateY(0);
+    opacity: 1;
+}
 
+.cards__foto:focus .cards__text {
+    transform: translateY(0);
+    opacity: 1;
+}
 .cards__item {
     position: relative;
 
@@ -28,20 +36,12 @@
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-
-
-}
-
-.cards__item a {
-    display: block;
-}
-
-.cards__item:nth-child(3n) {
-    margin-right: 0px;
-}
-
-.cards__item:nth-last-child(-n+3) {
-    margin-bottom: 0px;
+    & a {
+    display: block;}
+    &:nth-child(3n) {
+    margin-right: 0px;}
+    &:nth-last-child(-n+3) {
+    margin-bottom: 0px;}
 }
 
 
@@ -83,15 +83,6 @@
 
 }
 
-.cards__foto:hover .cards__text {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.cards__foto:focus .cards__text {
-    transform: translateY(0);
-    opacity: 1;
-}
 .cards__job {
     justify-content: start;
     font-family: Roboto;
