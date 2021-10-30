@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
       <style> a { text-decoration: none}</style>
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -148,7 +148,7 @@
 
         </main>
 
-<footer class="footer ">
+    <footer class="footer ">
         <div class="container" style="display: flex;">
         <div class="footer__contact ">
         <!-- <div class="social-fl"> -->
@@ -214,20 +214,20 @@
             <h3 class="letter__text">Подпишитесь на рассылку</h3>
         <div>
             <!-- <label for="user_email">Email</label> -->
-            
-  <label class="letter__label">
-      <span class="letter__box">
+         <span class="letter__box">  
+  <label class="letter__label"></label>
+      
       <input class="letter__input" type="email" name="email" id="user_email" placeholder="E-mail" />
-            <button class="letter__button">Подписаться
+ 
+            <button type="submit" class="letter__button">Подписаться
                 <svg class="letter__picture">
-                    <use weight="24" height="24" href="./img/icons.svg#letter" ></use>
+                    <use href="./img/icons.svg#letter" ></use>
                 </svg>
             
             </button>
-  </span>
-  </label>
+   </span>
         </div>
-        
+        </div>
       </div>
     </footer>
 </body>
